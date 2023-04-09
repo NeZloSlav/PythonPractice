@@ -10,14 +10,14 @@ def power(a, n):
         return a * power(a, n-1)
 
 try:
-    a = float(input('Введите действительное положительное число a: '))
-    if a <= 0:
+    number = float(input('Введите действительное положительное число a: '))
+    if number <= 0:
         print('Число a должно быть положительным')
 
-    n = int(input('Введите целое неотрицательное число n: '))
-    if n < 0:
+    degree = int(input('Введите целое неотрицательное число n: '))
+    if degree < 0:
         print('Число n должно быть неотрицательным')
-    print(power(a, n))
+    print(power(number, degree))
 
 
 except:
