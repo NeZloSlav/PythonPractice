@@ -21,8 +21,12 @@ def cylinder():
           '2) Полную площадь')
     answer = input('Введите номер операции: ')
 
-    radius = float(input('Введите радиус: '))
-    high = float(input('Введите высоту: '))
+    try:
+        radius = float(input('Введите радиус: '))
+        high = float(input('Введите высоту: '))
+    except:
+        print('Вы ввели некорректное значение')
+        return
 
     side_square = 2 * pi * radius * high
 
